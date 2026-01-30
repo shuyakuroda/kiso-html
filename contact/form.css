@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#page-title {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    padding: 100px 0;
+    background: url(./images/bg_contact.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#page-title:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    content: "";
+}
+
+#page-title h1,
+#page-title .lead {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+#page-title h1 {
+    margin: 0 0 65px;
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+.form-blk {
+    margin: 510px 0 0;
+    padding: 65px 0;
+    text-align: left;
+    background: #fff;
+    position: relative;
+}
+
+.form-blk .inner {
+    width: 900px;
+}
+
+label.your-name-c:after,
+label.phone-num-c:after,
+label.reservation-c:after {
+    content: "※";
+    color: #f00;
+    font-size: 1.4rem;
+    margin: 0 0 0 5px;
+}
+
+th {
+    width: 14em;
+    padding: 0 0 50px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+td {
+    padding: 0 0 50px;
+}
+
+.notes span {
+    color: #f00;
+}
+
+.notes {
+    margin: 0 0 30px;
+}
+
+/*---これ以降に追加--*/
+input#your-name,
+input#phone-num,
+input#e-mail {
+    font-size: 1.8rem;
+    height: 40px;
+    width: 400px;
+    border: 1px solid #c2c2c2;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+select {
+    font-size: 1.8rem;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #c2c2c2;
+    border-radius: 0;
+    background: "fff";
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+select#day,
+select#time {
+    margin: 0 0 0 2em;
+}
+
+textarea {
+    font-size: 1.8rem;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #c2c2c2;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input#btn-submit {
+    font-size: 1.6rem;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background: #ea7558;
+    border-radius: 5px;
+}
+
+/* -------------------
+スマホ
+--------------------- */
+
+@media screen and (max-width:414px) {
+    #contact #page-title {
+        top: 80px;
+        padding: 30px 0;
+    }
+
+    #contact #page-title h1,
+    #contact #page-title .lead {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    #contact #page-title h1 {
+        margin: 0 auto 30px;
+        font-size: 2.7rem;
+    }
+
+    #contact .form-blk {
+        margin: 358px 0 0;
+        padding: 30px 0;
+    }
+
+    #contact .form-blk .inner {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    #contact form table {
+        width: 100%;
+    }
+
+    #contact form th {
+        display: block;
+        width: 100%;
+        padding: 0 0 10px;
+    }
+
+    #contact form td {
+        display: block;
+        width: 100%;
+        padding: 0 0 30px;
+    }
+
+    #contact input#your-name,
+    #contact input#phone-num,
+    #contact input#e-mail {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    #contact select {
+        font-size: 1.6rem;
+        width: 3em;
+    }
+
+    #contact select#day,
+    #contact select#time {
+        margin: 0 0 0 1em;
+    }
+
+    #contact textarea {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    #contact .notes {
+        margin: 0 0 30px;
+        font-size: 1.4rem;
+    }
+
+    #contact input#btn-submit {
+        font-size: 1.6rem;
+        width: 100%;
+        margin: 0;
+    }
+
+
+}

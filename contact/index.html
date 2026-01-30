@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ご予約・お問い合わせ :: 和食処 本多屋</title>
+    <meta name="description" content="「和食処 本多屋」の「ご予約・お問い合わせ」のページです。">
+    <meta name="keywords" content="本多屋,和食,会席,和食処,奥多摩,古民家">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.menu-btn').click(function () {
+                $('.header-nav').toggleClass('open');
+            });
+            $('.header-nav a').click(function () {
+                $('.header-nav').toggleClass('open');
+            });
+        })
+    </script>
+
+</head>
+
+<body id="contact">
+    <header>
+        <div class="inner">
+            <h1 class="logo"><a href="../index.html"><span class="icon-logo"></span></a></h1>
+            <button type="button" class="menu-btn">menu</button>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="../about/index.html">当店について</a></li>
+                    <li><a href="../index.html#menu">お品書き</a></li>
+                    <li><a href="#">営業時間・アクセス</a></li>
+                    <li><a href="#">ご予約・お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="page-title">
+            <h1>ご予約・お問い合わせ</h1>
+            <p class="lead">コース・宴会のご予約承ります。<br>※ご希望当日の2ヵ月前から2日前の17時まで承ります。</p>
+        </div>
+
+        <div class="form-blk">
+            <div class="inner">
+
+                <form method="post" action="">
+                    <table>
+                        <tr>
+                            <th><label for="your-name" class="your-name-c">お名前</label></th>
+                            <td><input type="text" name="お名前" id="your-name"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="phone-num" class="phone-num-c">電話番号</label></th>
+                            <td><input type="tel" name="電話番号" id="phone-num"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="e-mail">メールアドレス</label></th>
+                            <td><input type="email" name="メールアドレス" id="e-mail"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="month" class="reservation-c">ご予約希望日時</label></th>
+                            <td>
+                                <select name="month" id="month">
+                                    <option value="">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select> 月
+
+                                <select name="day" id="day">
+                                    <option value="">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select> 日
+
+                                <select name="time" id="time">
+                                    <option value="">-</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                </select> 時
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="message">その他確認したい内容など</label></th>
+                            <td><textarea name="お問合せ内容" id="message"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <p class="notes"><span>*</span>は必須項目です。</p>
+                                <input type="submit" value="送信する" id="btn-submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1 class="logo"><span class="icon-logo"></span></h1>
+        <div class="wrap-blk">
+            <p>居心地の良い空間で『本多屋』の料理と共に、<br>心に残る至福のひとときをお過ごしくださいませ。</p>
+            <ul>
+                <li><a href="tel:04512345678"><i class="fas fa-phone"></i>045-1234-5678</a></li>
+                <li><i class="fas fa-map-marker-alt"></i>東京都西多摩郡奥多摩町海澤1005</li>
+            </ul>
+            <!-- wrap-blk -->
+        </div>
+        <p class="copyright"><a href="#">本多屋</a> © 2019. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
